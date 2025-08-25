@@ -8,6 +8,7 @@ export const Projects = () => {
   // Example: Add more projects to test Load More
   const projects = [
     {
+<<<<<<< HEAD
       title: "Doctor Appointment Application",
       description: "A comprehensive MERN stack application enabling seamless user logins and appointment scheduling with preferred healthcare providers.",
       features: [
@@ -22,6 +23,8 @@ export const Projects = () => {
       image: "/images/doctor.png"
     },
     {
+=======
+>>>>>>> b07e650 (personal portfolio)
       title: "E-Commerce Website",
       description: "A visually captivating e-commerce platform built with the MERN stack, focusing on enhanced user experience and seamless product management.",
       features: [
@@ -36,6 +39,23 @@ export const Projects = () => {
       image: "/images/ecommerce.png"
     },
     {
+<<<<<<< HEAD
+=======
+      title: "Doctor Appointment Application",
+      description: "A comprehensive MERN stack application enabling seamless user logins and appointment scheduling with preferred healthcare providers.",
+      features: [
+        "Dual functionality for patients and healthcare providers",
+        "Streamlined appointment booking system",
+        "Admin approval triggers automatic profile updates",
+        "Efficient healthcare provider role management"
+      ],
+      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"],
+      github: "https://github.com/Varshini1812/Doctor-Appointment-Client",
+      demo: "https://doctor-appointment-backend-vo36.netlify.app/",
+      image: "/images/doctor.png"
+    },
+    {
+>>>>>>> b07e650 (personal portfolio)
       title: "Inventory Management System",
       description: "A robust inventory management system for tracking stock, suppliers, and sales in real-time, designed for small and medium businesses.",
       features: [
@@ -45,10 +65,30 @@ export const Projects = () => {
         "Low-stock alerts and notifications"
       ],
       technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Chart.js"],
+<<<<<<< HEAD
       github: "https://github.com/Varshini1812/Ecom",
       demo: "https://inventory-dashboard-theta.vercel.app/",
       image: "/images/inventory.png"
     },
+=======
+      github: "https://github.com/Varshini1812/Inventory-Dashboard",
+      demo: "https://inventory-dashboard-theta.vercel.app/",
+      image: "/images/inventory.png"
+    },
+    {
+      title: "SkillSync (Ongoing)",
+      description: "A full-stack learning platform where instructors can create courses with videos, files, and quizzes, while students can enroll, make payments, and track their progress.",
+      features: [
+        "Course creation with multimedia support",
+        "Secure student enrollment and payment system",
+        "Admin dashboard with analytics (revenue, enrollments, ratings)",
+        "Responsive UI using Tailwind CSS for mobile compatibility"
+      ],
+      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+      github: "https://github.com/Varshini1812/varshini-sasikumar",
+      image: "/images/sooncoming.png"
+    }
+>>>>>>> b07e650 (personal portfolio)
   ];
 
   // Pagination state
