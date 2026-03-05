@@ -14,6 +14,7 @@ export const Navigation = () => {
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Blog", href: "#blog" },
     { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" }
   ];
@@ -65,23 +66,21 @@ export const Navigation = () => {
           <div className="font-bold text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             VARSHINI
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-1">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`relative px-4 py-2 transition-all duration-300 font-medium rounded-lg group ${
-                  activeSection === item.href.substring(1)
+                className={`relative px-4 py-2 transition-all duration-300 font-medium rounded-lg group ${activeSection === item.href.substring(1)
                     ? 'text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-900/30'
                     : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30'
-                }`}
+                  }`}
               >
                 {item.name}
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 ${
-                  activeSection === item.href.substring(1) ? 'w-full' : 'w-0 group-hover:w-full'
-                }`}></span>
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 ${activeSection === item.href.substring(1) ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
               </button>
             ))}
           </div>
@@ -117,11 +116,10 @@ export const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`block w-full text-left transition-all duration-300 font-medium py-3 px-4 rounded-lg ${
-                    activeSection === item.href.substring(1)
+                  className={`block w-full text-left transition-all duration-300 font-medium py-3 px-4 rounded-lg ${activeSection === item.href.substring(1)
                       ? 'text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-900/30'
                       : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </button>

@@ -104,7 +104,7 @@ export const Contact = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <a href="mailto:gmk9155@gmail.com" className="block" style={{ textDecoration: 'none' }}>
+                <a href="mailto:varshinis1812@gmail.com" className="block" style={{ textDecoration: 'none' }}>
                   <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-400">
                     <Mail className="mr-2 h-4 w-4" />
                     Get In Touch

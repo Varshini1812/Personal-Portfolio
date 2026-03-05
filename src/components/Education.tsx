@@ -11,22 +11,6 @@ export const Education = () => {
       cgpa: "9.43",
       type: "Undergraduate"
     },
-    {
-      degree: "Higher Secondary School Certificate",
-      institution: "Sree Saravana Nikethan Higher Secondary School, Nerinjipettai",
-      location: "Erode, India",
-      period: "2018 - 2020",
-      grade: "85.16%",
-      type: "Higher Secondary"
-    },
-    {
-      degree: "Secondary School Leaving Certificate",
-      institution: "Talent Vidhyala Matriculation School, Ammapettai",
-      location: "Erode, India",
-      period: "2017 - 2018",
-      grade: "96.12%",
-      type: "Secondary School"
-    }
   ];
 
   return (
@@ -62,7 +46,6 @@ export const Education = () => {
                   <GraduationCap className="h-4 w-4 text-green-600 dark:text-green-400" />
                   <span className="font-medium text-gray-900 dark:text-gray-100 text-sm">
                     {edu.cgpa && `CGPA: ${edu.cgpa}`}
-                    {edu.grade && `Grade: ${edu.grade}`}
                   </span>
                 </div>
               </div>

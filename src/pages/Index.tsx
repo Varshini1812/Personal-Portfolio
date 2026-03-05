@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
+import { Blog } from "@/components/Blog";
 import { Education } from "@/components/Education";
 import { Contact } from "@/components/Contact";
 
@@ -24,23 +25,23 @@ const Index = () => {
                   <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mb-8 rounded-full" />
                   <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl">
                     I'm a passionate Full Stack Developer with expertise in modern web technologies. I love creating scalable applications and solving complex problems with clean, efficient code.
-                  Proficient in designing secure APIs, managing databases, and optimizing performance, I deliver clean, efficient solutions that enhance user experience. </p>
+                    Proficient in designing secure APIs, managing databases, and optimizing performance, I deliver clean, efficient solutions that enhance user experience. </p>
                 </div>
                 {/* Core Skills as unified gradient badges with matching number circles */}
                 <div className="flex flex-wrap gap-4 mt-4">
-                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{minHeight: '56px'}}>
+                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{ minHeight: '56px' }}>
                     <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-400 text-white font-bold mr-3 text-sm">5+</span>
                     Programming Languages
                   </span>
-                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{minHeight: '56px'}}>
+                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{ minHeight: '56px' }}>
                     <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-400 text-white font-bold mr-3 text-sm">7+</span>
                     Frameworks & Libraries
                   </span>
-                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{minHeight: '56px'}}>
+                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{ minHeight: '56px' }}>
                     <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-400 text-white font-bold mr-3 text-sm">4+</span>
                     Databases
                   </span>
-                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{minHeight: '56px'}}>
+                  <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{ minHeight: '56px' }}>
                     <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-400 text-white font-bold mr-3 text-sm">3+</span>
                     Tools & Technologies
                   </span>
@@ -86,7 +87,7 @@ const Index = () => {
                   </div>
                 </div>
                 {/* LeetCode */}
-              
+
                 {/* Guvi & CodeChef */}
                 {/* <div className="flex flex-row items-center justify-between p-5 rounded-2xl bg-indigo-50 dark:bg-indigo-900/10 md:ml-auto md:mr-0 w-full max-w-sm mx-auto">
                   <div className="flex flex-col items-start">
@@ -113,6 +114,9 @@ const Index = () => {
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="blog">
+          <Blog />
         </section>
         <section id="education">
           <Education />

@@ -50,7 +50,7 @@ export const Projects = () => {
       image: "/images/inventory.png"
     },
     {
-      title: "SkillSync (Ongoing)",
+      title: "SkillAra (Ongoing)",
       description: "A full-stack learning platform where instructors can create courses with videos, files, and quizzes, while students can enroll, make payments, and track their progress.",
       features: [
         "Course creation with multimedia support",
@@ -59,7 +59,7 @@ export const Projects = () => {
         "Responsive UI using Tailwind CSS for mobile compatibility"
       ],
       technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
-      github: "https://github.com/Varshini1812/varshini-sasikumar",
+      github: "https://github.com/Varshini1812/SkillAra",
       image: "/images/sooncoming.png"
     }
   ];

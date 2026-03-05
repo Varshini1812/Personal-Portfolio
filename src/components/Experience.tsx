@@ -12,12 +12,15 @@ export const Experience = () => {
     period: "Jun 2024 - Present",
     current: true,
     achievements: [
-    "Developed and maintained scalable RESTful APIs with Express.js, TypeScript, and Sequelize ORM using PostgreSQL and MongoDB.",
+    "Developed and maintained high-performance RESTful APIs using Node.js, Express.js, and TypeScript, and Sequelize ORM using PostgreSQL and MongoDB,handling over 50,000 requests/day with <200ms average response time.",
     "Implemented secure authentication with JWT-based role-based access control and robust middleware for validation and error handling.",
+    "Optimized PostgreSQL (Sequelize) and MongoDB (Mongoose) schemas with indexing, pagination, and filtering, improving query performance by 25–30%.",
+    "Resolved MongoDB query spikes by rewriting complex queries and adding proper indexes, reducing database latency by 60% during peak load.",
     "Automated backend tasks using node-cron and integrated secure file uploads with Amazon S3.",
     "Created detailed API documentation with Swagger, improving developer onboarding and maintainability.",
+    "Integrated RabbitMQ for asynchronous messaging with retry and failure handling, increasing system throughput by 35%.",
     "Integrated Amazon S3 using AWS SDK and multer-s3 for secure file uploads, ensuring compliance with IAM policies.",
-    "Enhanced API reliability through robust input validation with Joi and comprehensive error handling middleware.",
+    "Consumed and integrated external SOAP services with error handling, achieving 99.9% uptime for third-party data ingestion",
     "Designed responsive, mobile-friendly UIs with Angular and optimized frontend-backend integration.",
     "Led an image processing project leveraging React.js and Python, utilizing OpenCV and Pillow for real-time image manipulation and analysis.",
     "Collaborated on scalable pipelines for image data handling and integrated visual recognition features for advanced functionality.",
@@ -31,10 +34,11 @@ export const Experience = () => {
     period: "Feb 2024 - May 2024",
     current: false,
     achievements: [
-      "Completed hands-on training in modern web technologies including HTML, CSS, JavaScript, Angular, Node.js, and SQL.",
       "Implemented secure authentication and authorization mechanisms using JWT and OAuth.",
       "Collaborated on database management and performed CRUD operations with MongoDB and SQL.",
-      "Gained experience in version control and team collaboration using GitLab.",
+      "Developed backend APIs using Node.js, Express.js, MongoDB, and SQL, supporting 500+ daily active users.",
+      "Built and maintained frontend components in Angular, improving UI responsiveness for 500+ users.",
+      "Gained hands-on full-stack experience,version control, optimizing API response times by 20–25% and improving scalability"
     ],
   },
 ];
