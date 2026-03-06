@@ -172,7 +172,7 @@ export const Hero = () => {
                 Get In Touch
               </Button>
             </a>
-            <a href="https://drive.google.com/file/d/13G_NFlxu3HRTbVTQPHbj5eYmnuI-HC1n/view?usp=drive_link" download>
+            <a href="https://drive.google.com/file/d/1ZM3yBEq5l8AXf8UEDaC7Lipn7vwyQrfI/view?usp=drive_link" download>
               <Button
                 variant="outline"
                 className="border-2 border-purple-600/50 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 backdrop-blur-md bg-white/20 dark:bg-gray-900/20 border-white/30"
