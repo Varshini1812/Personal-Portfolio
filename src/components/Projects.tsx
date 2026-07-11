@@ -8,6 +8,19 @@ export const Projects = () => {
   // Example: Add more projects to test Load More
   const projects = [
     {
+      title: "SkillAra (Ongoing)",
+      description: "A full-stack learning platform where instructors can create courses with videos, files, and quizzes, while students can enroll, make payments, and track their progress.",
+      features: [
+        "Course creation with multimedia support",
+        "Secure student enrollment and payment system",
+        "Admin dashboard with analytics (revenue, enrollments, ratings)",
+        "Responsive UI using Tailwind CSS for mobile compatibility"
+      ],
+      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+      github: "https://github.com/Varshini1812/SkillAra",
+      image: "/images/sooncoming.png"
+    },
+    {
       title: "E-Commerce Website",
       description: "A visually captivating e-commerce platform built with the MERN stack, focusing on enhanced user experience and seamless product management.",
       features: [
@@ -48,19 +61,6 @@ export const Projects = () => {
       github: "https://github.com/Varshini1812/Inventory-Dashboard",
       demo: "https://inventory-dashboard-theta.vercel.app/",
       image: "/images/inventory.png"
-    },
-    {
-      title: "SkillAra (Ongoing)",
-      description: "A full-stack learning platform where instructors can create courses with videos, files, and quizzes, while students can enroll, make payments, and track their progress.",
-      features: [
-        "Course creation with multimedia support",
-        "Secure student enrollment and payment system",
-        "Admin dashboard with analytics (revenue, enrollments, ratings)",
-        "Responsive UI using Tailwind CSS for mobile compatibility"
-      ],
-      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
-      github: "https://github.com/Varshini1812/SkillAra",
-      image: "/images/sooncoming.png"
     }
   ];
 
