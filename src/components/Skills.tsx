@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { FaCode, FaServer, FaTools, FaShieldAlt, FaDatabase, FaLanguage, FaCogs, FaCloudUploadAlt, FaPencilRuler, FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs, FaPython, FaGitAlt, FaLinux, FaFigma, FaWordpress, FaJava, FaPhp, FaConnectdevelop, FaCodeBranch, FaBootstrap, FaAngular, FaClock, FaBook, FaCloud, FaLeaf, FaFire, FaGithub, FaGitlab, FaAws } from "react-icons/fa";
+import { FaCode, FaServer, FaTools, FaShieldAlt, FaDatabase, FaLanguage, FaCogs, FaCloudUploadAlt, FaPencilRuler, FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJs, FaPython, FaGitAlt, FaLinux, FaFigma, FaWordpress, FaPhp, FaConnectdevelop, FaCodeBranch, FaBootstrap, FaAngular, FaClock, FaBook, FaCloud, FaLeaf, FaFire, FaGithub, FaGitlab, FaAws } from "react-icons/fa";
 import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import { motion, Variants } from "framer-motion";
 import { SiExpress, SiJsonwebtokens, SiNetlify, SiPostgresql, SiTailwindcss, SiVercel } from "react-icons/si"; 
@@ -43,7 +43,6 @@ const techIconMap: Record<string, JSX.Element> = {
   LINUX: <FaLinux className="inline text-black dark:text-white" />,
   FIGMA: <FaFigma className="inline text-pink-500" />,
   WORDPRESS: <FaWordpress className="inline text-blue-700" />,
-  JAVA: <FaJava className="inline text-red-700" />,
   PHP: <FaPhp className="inline text-indigo-700" />,
   BOOTSTRAP: <FaBootstrap className="inline text-purple-600" />,
   ANGULAR: <FaAngular className="inline text-red-600" />,
@@ -70,7 +69,6 @@ const skillTooltips: Record<string, string> = {
   TYPESCRIPT: "TypeScript - Type-safe JS",
   PYTHON: "Python - Scripting & automation",
   GIT: "Git - Version control",
-  JAVA: "Java - OOP & backend",
   JWT: "JWT - Secure stateless authentication",
   OAUTH: "OAuth - Authorization for third-party applications",
 };
@@ -90,7 +88,7 @@ export const Skills = () => {
  const skillsData = {
   languages: {
     title: "Languages",
-    skills: ["C", "C++", "JAVA", "JAVASCRIPT", "TYPESCRIPT", "PYTHON"],
+    skills: ["JAVASCRIPT", "TYPESCRIPT", "PYTHON"],
   },
   frontend: {
     title: "Frontend",

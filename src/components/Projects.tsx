@@ -8,17 +8,19 @@ export const Projects = () => {
   // Example: Add more projects to test Load More
   const projects = [
     {
-      title: "SkillAra (Ongoing)",
-      description: "A full-stack learning platform where instructors can create courses with videos, files, and quizzes, while students can enroll, make payments, and track their progress.",
+      title: "SkillAra | Multi-Tenant SaaS Platform",
+      description: "A distributed multi-tenant SaaS learning platform with AI tutoring, RS256 JWT security, and dual React 19 SPAs.",
       features: [
-        "Course creation with multimedia support",
-        "Secure student enrollment and payment system",
-        "Admin dashboard with analytics (revenue, enrollments, ratings)",
-        "Responsive UI using Tailwind CSS for mobile compatibility"
+        "Isolated tenant workspaces ({tenant}.skillara.com) with automated onboarding.",
+        "RS256 JWT auth with httpOnly token rotation & 2-tier RBAC (Super-Admin & Tenant Admin).",
+        "OpenAI integration for AI tutoring, dynamic quizzes, & summarization.",
+        "Flexible Mongoose schemas for customizable tenant catalogs & roles.",
+        "Dual React 19 SPAs (Admin & Tenant UI) with course authoring & progress tracking."
       ],
-      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
+      technologies: ["Node.js", "React 19", "Express 5", "MongoDB", "Tailwind CSS 4", "OpenAI API", "RS256 JWT"],
       github: "https://github.com/Varshini1812/SkillAra",
-      image: "/images/sooncoming.png"
+      demo: "https://skillara-tenant-ui.vercel.app/login",
+      image: "/images/SkillAra.png"
     },
     {
       title: "E-Commerce Website",
@@ -90,12 +92,23 @@ export const Projects = () => {
                 </div>
               )}
               <CardHeader className="pb-2">
-                <CardTitle className="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors truncate">
+                <CardTitle className="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="flex-1 flex flex-col justify-between gap-3">
-                <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-3 mb-2">{project.description}</p>
+                <div>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">{project.description}</p>
+                  {project.features && project.features.length > 0 && (
+                    <ul className="text-xs text-gray-600 dark:text-gray-300 space-y-1.5 mb-3 list-disc list-inside">
+                      {project.features.map((feature, fIdx) => (
+                        <li key={fIdx} className="leading-relaxed">
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
                 <div className="flex flex-wrap gap-1 mb-2">
                   {project.technologies.map((tech, idx) => (
                     <Badge key={idx} variant="secondary" className="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900">
@@ -110,12 +123,14 @@ export const Projects = () => {
                       <span>Code</span>
                     </Button>
                   </a>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1">
-                    <Button size="sm" className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white dark:text-gray-900">
-                      <ExternalLink className="h-4 w-4" />
-                      <span>Live Demo</span>
-                    </Button>
-                  </a>
+                  {project.demo && (
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button size="sm" className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white dark:text-gray-900">
+                        <ExternalLink className="h-4 w-4" />
+                        <span>Live Demo</span>
+                      </Button>
+                    </a>
+                  )}
                 </div>
               </CardContent>
             </Card>

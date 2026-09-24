@@ -30,7 +30,7 @@ const Index = () => {
                 {/* Core Skills as unified gradient badges with matching number circles */}
                 <div className="flex flex-wrap gap-4 mt-4">
                   <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{ minHeight: '56px' }}>
-                    <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-400 text-white font-bold mr-3 text-sm">5+</span>
+                    <span className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-400 text-white font-bold mr-3 text-sm">3+</span>
                     Programming Languages
                   </span>
                   <span className="inline-flex items-center px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-blue-900 font-bold text-md transition-transform duration-200 hover:scale-105" style={{ minHeight: '56px' }}>
